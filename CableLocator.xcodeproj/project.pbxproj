@@ -10,6 +10,7 @@
 		2B5BDFA34AA2CCF3A797CF57 /* ProjectStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1677E6C3A3A0E8A305D245F6 /* ProjectStore.swift */; };
 		629695FB841F936B63BF5E05 /* CableLocatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90589EE7805B98E064B389E8 /* CableLocatorApp.swift */; };
 		7C0D311161B6CA69E66FE5E0 /* ARViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E3FD27D30D9C6BB5E0D4C /* ARViews.swift */; };
+		8842B964B8288018437EFC40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25FFA240F1D88B791FE62E0F /* Assets.xcassets */; };
 		912B9CE7BE66B3FB08BDFD1C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4133F8A4D3E0E9A8EBE0084 /* Models.swift */; };
 		BE8C8713BB24FD8D09A3528E /* ARSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7C902D23E3299F392E17B1 /* ARSessionController.swift */; };
 		D07805E92196186E617CF60C /* ProjectViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDD77A795C975C59EB9C32 /* ProjectViews.swift */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		0F5531FDC8857B61EBD4633E /* CableLocator.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = CableLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1677E6C3A3A0E8A305D245F6 /* ProjectStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStore.swift; sourceTree = "<group>"; };
+		25FFA240F1D88B791FE62E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A7C902D23E3299F392E17B1 /* ARSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionController.swift; sourceTree = "<group>"; };
 		90589EE7805B98E064B389E8 /* CableLocatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CableLocatorApp.swift; sourceTree = "<group>"; };
 		B1FDD77A795C975C59EB9C32 /* ProjectViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViews.swift; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			children = (
 				4A7C902D23E3299F392E17B1 /* ARSessionController.swift */,
 				CA9E3FD27D30D9C6BB5E0D4C /* ARViews.swift */,
+				25FFA240F1D88B791FE62E0F /* Assets.xcassets */,
 				90589EE7805B98E064B389E8 /* CableLocatorApp.swift */,
 				B4133F8A4D3E0E9A8EBE0084 /* Models.swift */,
 				1677E6C3A3A0E8A305D245F6 /* ProjectStore.swift */,
@@ -63,6 +66,7 @@
 			buildConfigurationList = EC244DCCBB4AB007A670C217 /* Build configuration list for PBXNativeTarget "CableLocator" */;
 			buildPhases = (
 				EB2F79C920FBC3B6998C6F98 /* Sources */,
+				B95A8D65C77641991257EB75 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -107,6 +111,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B95A8D65C77641991257EB75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8842B964B8288018437EFC40 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB2F79C920FBC3B6998C6F98 /* Sources */ = {
@@ -188,19 +203,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Scan rooms and photograph cable positions before lining.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.prewire.cablelocator;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,19 +293,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Scan rooms and photograph cable positions before lining.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.prewire.cablelocator;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
